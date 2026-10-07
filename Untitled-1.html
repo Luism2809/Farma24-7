@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Farma 24/7</title>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Importar iconos de Bootstrap para el pie de página y contactos -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+body {
+    font: 15px Lato, sans-serif;
+    line-height: 2.8;
+    color: #818181;
+    padding-top: 75px; /* Empuja el contenido hacia abajo para que la barra fixed-top no lo tape */
+}
+.jumbotron {
+    background-color: #5E74A1;
+    color: #ffffff;
+    padding: 100px 25px;
+    font-family: sans-serif;
+    text-align: center;
+}
+.container-fluid {
+    padding: 40px 50px;
+}
+.bg-gray {
+    background-color: #DCDCDC;
+}
+.panel {
+    border: 1px solid #EDC45B;
+}
+.panel:hover {
+    box-shadow: 3px 7px 30px #008000;
+}
+.equipo .panel-heading {
+    color: #fff;
+    background-color: #F7780F;
+    padding: 25px;
+    border-bottom: 1px solid;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.panel-footer {
+    background-color: #EDC45B;
+}
+.panel-footer h4 {
+    color: #0C32F5;
+    font-size: 15px;
+}
+.menu {
+    background-color: #483d8b;
+    padding: 5px 0px 14px;
+    border: 0;
+    font-size: 12px;
+    line-height: 1.42;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+}
+.menu .navbar-nav li a, .menu .navbar-brand {
+    color: #fff;
+}
+.menu .navbar-nav li a:hover, .menu .navbar-nav li.active a {
+    color: #f4511e;
+    background-color: #fff;
+}
+footer .bi {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #DAA520;
+}
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+</style>
+</head>
+<body id="top">
+    <header>
+        <nav class="navbar navbar-expand-lg text-uppercase fixed-top menu">
+            <div class="container">
+                <a class="navbar-brand" href="#top">
+                   <img src="Farma24_7-logo-white.png" class="img-fluid" alt="Logo" style="max-height: 30px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#acerca">ACERCA DE</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#productos">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#tiendas">TIENDAS</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#equipo">EQUIPO</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contacto">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="jumbotron">
+            <h1>Farma24/7</h1>
+            <p>Todo en medicamentos y marcas reconocidas</p>
+            <form class="form-inline">
+                <input type="email" size="50" placeholder="Dirección de correo electrónico">
+                <button type="button" class="btn btn-success">Suscribirse</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Sección Acerca de (id cambiado a minúsculas para que coincida con el menú) -->
+    <section id="acerca" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-8">
+                <h2>Acerca de nuestra compañía</h2>
+                <h4>En Farma 24/7, nuestra prioridad es tu salud y el bienestar integral de toda tu familia. Desde nuestra fundación, nos hemos comprometido a ofrecer un servicio cercano, confiable y de alta calidad, convirtiéndonos en tu aliado de confianza para el cuidado diario.
+                    Más que un establecimiento donde adquirir tus medicamentos, somos un espacio de salud integral donde encontrarás asesoramiento profesional personalizado, escuchando tus necesidades y brindándote la orientación que tú y los tuyos merecen.</h4>
+                <a href="about.html" class="btn btn-primary btn-lg"> Más informacion </a>
+            </div>
+            <div class="col-sm-4">
+                <div class="ratio ratio-16by9">
+                    <iframe src="https://www.youtube.com/embed/nJYA1Elheqg" title="Video corporativo" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nuestros Valores -->
+    <section id="valores" class="container-fluid bg-gray">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="valores.png" class="img-fluid" alt="Valores">
+            </div>
+            <div class="col-sm-8">
+                <h2>Nuestros Valores</h2>
+                <p><strong>MISIÓN:</strong> Compromiso con la salud: Trabajamos cada día para garantizar el acceso a tratamientos seguros, eficaces y de la mejor calidad.</p>
+                <p><strong>VISIÓN:</strong> Profesionalismo: Nuestro equipo está formado por farmacéuticos colegiados y personal altamente capacitado, en constante actualización para ofrecerte el mejor consejo farmacéutico.</p>
+                <p><strong>VALORES:</strong> Cercanía y empatía: Te atendemos con una escucha activa, ofreciendo un trato humano y personalizado en cada visita.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Productos -->
+    <section id="productos" class="container-fluid text-center">
+        <h2>NUESTROS PRODUCTOS</h2>
+        <h4>Lo que ofrecemos</h4>
+        <br>
+        <div class="row">
+            <!-- Imagen 1 -->
+            <div class="col-sm-4">
+                <img src="Imagen1.jpg" class="img-fluid" alt="Imagen1">
+                <h4>Medicamentos</h4>
+                <p>Los mejores medicamentos para la salud.</p>
+            </div>
+            <!-- Imagen 2 -->
+            <div class="col-sm-4">
+                <img src="Imagen2.png" class="img-fluid" alt="Imagen2">
+                <h4>Jeringas</h4>
+                <p>Jeringas para cualquier inyección.</p>
+            </div>
+            <!-- Imagen 3 -->
+            <div class="col-sm-4">
+                <img src="Imagen3.png" class="img-fluid" alt="Imagen3">
+                <h4>Mascarillas</h4>
+                <p>Mascarillas para evitar cualquier contagio.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Tiendas -->
+    <section id="tiendas" class="container-fluid text-center bg-gray">
+        <h2>Tiendas</h2><br>
+        <h4>Nuestras sucursales</h4>
+        <div class="row text-center">
+            <!-- Columna 1 -->
+            <div class="col-sm-4">
+                <img src="Tienda_a.jpeg" class="img-fluid" alt="Tienda_a">
+                <p><strong>Tienda A</strong></p>
+                <p>Farmacia</p>
+            </div>
+            <!-- Columna 2 -->
+            <div class="col-sm-4">
+                <img src="Tienda_b.png" class="img-fluid" alt="Tienda_b">
+                <p><strong>Tienda B</strong></p>
+                <p>Productos</p>
+            </div>
+            <!-- Columna 3 -->
+            <div class="col-sm-4">
+                <img src="Tienda_c.png" class="img-fluid" alt="Tienda_c">
+                <p><strong>Tienda C</strong></p>
+                <p>Productos</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Equipo de trabajo -->
+    <section id="equipo" class="container-fluid">
+        <div class="text-center mb-4">
+            <h2>Equipo de trabajo</h2>
+            <h4>Asistencia inmediata y personalizada</h4>
+        </div>
+        
+        <div class="row">
+            <!-- Columna 1 -->
+            <div class="col-sm-3">
+                <div class="panel panel-default text-center equipo">
+                    <div class="panel-heading">
+                        <img src="ser1.png" class="img-fluid" alt="ser1">
+                    </div>
+                    <div class="panel-body">
+                        <p>Asignación de posiciones, coordinar y analizar las funciones administrativas.</p>
+                    </div>
+                    <div class="panel-footer">
+                        <h3>Juan Escobar</h3>
+                        <h4>Gerente general</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna 2 -->
+            <div class="col-sm-3">
+                <div class="panel panel-default text-center equipo">
+                    <div class="panel-heading">
+                        <img src="ser2.png" class="img-fluid" alt="ser2">
+                    </div>
+                    <div class="panel-body">
+                        <p>Optimizar los resultados de las ventas de la organización.</p>        
+                    </div>
+                    <div class="panel-footer">
+                        <h3>Adriana Fuentes</h3>
+                        <h4>Ejecutiva de ventas</h4>
+                    </div>
+                </div>      
+            </div>      
+
+            <!-- Columna 3 -->
+            <div class="col-sm-3">
+                <div class="panel panel-default text-center equipo">
+                    <div class="panel-heading">
+                        <img src="ser3.png" class="img-fluid" alt="ser3">
+                    </div>
+                    <div class="panel-body">
+                        <p>Gestionar, planificar y controlar las finanzas de la organización.</p>                
+                    </div>
+                    <div class="panel-footer">
+                        <h3>Pedro Arana</h3>
+                        <h4>Gerente financiero</h4>
+                    </div>
+                </div>      
+            </div>
+
+            <!-- Columna 4 -->
+            <div class="col-sm-3">
+                <div class="panel panel-default text-center equipo">
+                    <div class="panel-heading">
+                        <img src="ser4.png" class="img-fluid" alt="ser4">
+                    </div>
+                    <div class="panel-body">
+                        <p>Planear, coordinar y supervisar las actividades profesionales.</p>
+                    </div>
+                    <div class="panel-footer">
+                        <h3>Vicky Figueroa</h3>
+                        <h4>Gerente de recursos humanos</h4>
+                    </div>
+                </div>      
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="container-fluid bg-gray">
+        <h2 class="text-center">CONTACTO</h2>
+        <div class="row">
+            <div class="col-sm-5">
+                <h4>Información de contacto:</h4>
+                <p><span class="bi bi-geo-alt icono"></span> Col. Buenos Aires, Calle Lara N°.4</p>
+                <p><span class="bi bi-telephone-plus icono"></span> 0000-0000</p>
+                <p><span class="bi bi-envelope icono"></span> farma24/7@gmail.com</p>
+            </div>
+            <div class="col-sm-7">
+                <form>
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" name="name" placeholder="Nombre" type="text" required>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" name="email" placeholder="E-mail" type="email" required><br>
+                        </div>
+                    </div>
+                    <textarea class="form-control" name="pregunta" placeholder="Pregunta" rows="4"></textarea><br>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <button class="btn btn-primary" type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--Sección Mapas-->
+    <section class="container-fluid">
+        <h3>Nuestra ubicación</h3>
+        <div class="row">
+            <div class="col-sm-12">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.664670629441!2d-89.2872486!3d13.6781429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f632efe53778fb3%3A0x21f34da7f1473fd3!2sColegio%20Salesiano%20Santa%20Cecilia!5e0!3m2!1ses!2ssv!4v1791342193699!5m2!1ses!2ssv" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!--Pie de página-->
+    <footer class="container-fluid text-center">
+        <a href="#top" title="Ir al inicio">
+            <span class="bi bi-house-door-fill"></span>
+        </a>
+        <p>Página creada por: <a href="#top" title="Visite nuestro sitio">www.farma24.com</a></p> 
+    </footer>
+
+    <!--Script para añadir desplazamiento suave corregido-->
+    <script>
+    $(document).ready(function(){
+        $(".navbar a, footer a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top - 60
+                }, 900, function(){
+                    window.location.hash = hash;
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>
